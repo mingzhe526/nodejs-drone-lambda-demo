@@ -6,7 +6,7 @@ steps:
     image: alpine
     commands:
       - apk update && apk add zip
-      - zip -r handler.zip *
+      - zip -r function.zip *
 
   - name: deploy-lambda
     image: mesosphere/aws-cli
