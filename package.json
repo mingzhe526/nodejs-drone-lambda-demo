@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-drone-lambda-example",
+  "version": "1.0.0",
+  "description": "# deploy to lambda test npm run deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "zip -r function.zip . && aws lambda update-function-code --function-name helloWorld --zip-file fileb://function.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Larry850806/nodejs-drone-lambda-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Larry850806/nodejs-drone-lambda-example/issues"
+  },
+  "homepage": "https://github.com/Larry850806/nodejs-drone-lambda-example#readme"
+}
