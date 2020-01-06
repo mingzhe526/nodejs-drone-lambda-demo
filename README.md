@@ -10,9 +10,9 @@ helloWorld
 aws configure
 ```
 inputs:
- YOUR_AWS_ACCESS_KEY_ID
- YOUR_AWS_SECRET_ACCESS_KEY
- YOUR_REGION
+- YOUR_AWS_ACCESS_KEY_ID
+- YOUR_AWS_SECRET_ACCESS_KEY
+- YOUR_REGION
 
 ### deploy to lambda test
 npm run deploy
@@ -31,8 +31,8 @@ https://cloud.drone.io/
 
    in 'Secrets' Section, add two secret name / secret value: 
     
-     aws_access_key_id / YOUR_AWS_ACCESS_KEY_ID
-     aws_secret_access_key / YOUR_AWS_SECRET_ACCESS_KEY
+     - aws_access_key_id / YOUR_AWS_ACCESS_KEY_ID
+     - aws_secret_access_key / YOUR_AWS_SECRET_ACCESS_KEY
 
 
 
