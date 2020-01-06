@@ -15,9 +15,13 @@ inputs:
 - YOUR_REGION
 
 ### deploy to lambda test
-npm run deploy
+in pakage.json add
 ```
 "deploy": "zip -r function.zip . && aws lambda update-function-code --function-name helloWorld --zip-file fileb://function.zip"
+```
+run command below to test delopy this lambda function to aws
+```
+npm run deploy
 ```
 
 ### add .drone.yml and commit source code to github
