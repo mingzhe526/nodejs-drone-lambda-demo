@@ -9,9 +9,10 @@ helloWorld
 ```
 aws configure
 ```
-YOUR_AWS_ACCESS_KEY_ID
-YOUR_AWS_SECRET_ACCESS_KEY
-YOUR_REGION
+inputs:
+ YOUR_AWS_ACCESS_KEY_ID
+ YOUR_AWS_SECRET_ACCESS_KEY
+ YOUR_REGION
 
 ### deploy to lambda test
 npm run deploy
