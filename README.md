@@ -3,6 +3,7 @@ nodejs-drone-lambda-example
 
 ## setp 
 ### create aws lambda function
+helloWorld
 
 ### create a aws user and use aws configure
 ```
