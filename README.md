@@ -19,7 +19,30 @@ npm run deploy
 "deploy": "zip -r function.zip . && aws lambda update-function-code --function-name helloWorld --zip-file fileb://function.zip"
 ```
 
-### commit source code to github
+### add .drone.yml and commit source code to github
+```
+kind: pipeline
+name: default
+
+steps:
+  - name: zip
+    image: alpine
+    commands:
+      - apk update && apk add zip
+      - zip -r function.zip *
+
+  - name: deploy-lambda
+    image: mesosphere/aws-cli
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_access_key_id
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_secret_access_key
+      AWS_DEFAULT_REGION: ap-northeast-1
+    commands:
+      - aws lambda update-function-code --function-name helloWorld --zip-file fileb://./function.zip
+
+```
 
 
 ### Open cloud drone
