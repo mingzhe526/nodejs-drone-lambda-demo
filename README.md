@@ -14,6 +14,23 @@ inputs:
 - YOUR_AWS_SECRET_ACCESS_KEY
 - YOUR_REGION
 
+
+### unit test (mocha)
+```
+npm test
+```
+
+test input data
+```
+{
+  "data": {
+    "num1": 1,
+    "num2": 2
+  }
+}
+```
+
+
 ### deploy to lambda test
 in pakage.json add
 ```
