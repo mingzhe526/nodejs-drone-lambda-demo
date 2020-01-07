@@ -47,6 +47,13 @@ kind: pipeline
 name: default
 
 steps:
+
+  - name: test
+    image: mhart/alpine-node:12
+    commands:
+      - npm install      
+      - npm test
+
   - name: zip
     image: alpine
     commands:
