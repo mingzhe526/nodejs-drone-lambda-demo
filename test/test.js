@@ -7,8 +7,7 @@ describe('event caculate tet', ()=> {
 
         const event = {
             "data": {
-                "num1": 1,
-                "num2": 2
+
             }}
         let result = handler(event);
         if(isNaN(result.value)) {
