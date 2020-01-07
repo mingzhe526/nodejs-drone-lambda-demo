@@ -1,7 +1,7 @@
 # project
 nodejs-drone-lambda-example
 
-## setp 
+## steps 
 ### create aws lambda function
 helloWorld
 
