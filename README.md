@@ -16,6 +16,11 @@ inputs:
 
 
 ### unit test (mocha)
+in pakage.json scripts{...} add
+```
+"test": "mocha"
+```
+run npm test to test
 ```
 npm test
 ```
@@ -32,7 +37,7 @@ test input data
 
 
 ### deploy to lambda test
-in pakage.json add
+in pakage.json scripts{...} add
 ```
 "deploy": "zip -r function.zip . && aws lambda update-function-code --function-name helloWorld --zip-file fileb://function.zip"
 ```
