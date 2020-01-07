@@ -7,7 +7,7 @@ describe('event caculate tet', ()=> {
 
         const event = {
             "data": {
-                "num1": 1,
+                "num1": 5,
                 "num2": 2
             }}
         let result = handler(event);
