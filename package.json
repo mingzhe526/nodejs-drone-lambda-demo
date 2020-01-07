@@ -4,7 +4,7 @@
   "description": "# deploy to lambda test npm run deploy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "deploy": "zip -r function.zip . && aws lambda update-function-code --function-name helloWorld --zip-file fileb://function.zip"
   },
   "repository": {
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Larry850806/nodejs-drone-lambda-example/issues"
   },
-  "homepage": "https://github.com/Larry850806/nodejs-drone-lambda-example#readme"
+  "homepage": "https://github.com/Larry850806/nodejs-drone-lambda-example#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0"
+  }
 }
