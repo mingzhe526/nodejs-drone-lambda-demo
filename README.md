@@ -5,7 +5,7 @@ nodejs-drone-lambda-example
 ### create aws lambda function
 helloWorld
 
-### create a aws user and use aws configure
+### setting aws configure
 ```
 aws configure
 ```
