@@ -20,6 +20,6 @@
   "homepage": "https://github.com/Larry850806/nodejs-drone-lambda-example#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.0.0"
+    "mocha": "^10.2.0"
   }
 }
